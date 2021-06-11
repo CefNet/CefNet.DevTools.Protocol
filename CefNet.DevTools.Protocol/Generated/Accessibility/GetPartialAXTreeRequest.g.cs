@@ -1,0 +1,33 @@
+//
+// DO NOT MODIFY. THIS IS AUTOMATICALLY GENERATED FILE.
+//
+#nullable enable
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+using System;
+using System.Collections.Generic;
+
+namespace CefNet.DevTools.Protocol.Accessibility
+{
+    public sealed class GetPartialAXTreeRequest
+    {
+        /// <summary>
+        /// Identifier of the node to get the partial accessibility tree for.
+        /// </summary>
+        public CefNet.DevTools.Protocol.DOM.NodeId? NodeId { get; set; }
+
+        /// <summary>
+        /// Identifier of the backend node to get the partial accessibility tree for.
+        /// </summary>
+        public CefNet.DevTools.Protocol.DOM.BackendNodeId? BackendNodeId { get; set; }
+
+        /// <summary>
+        /// JavaScript object id of the node wrapper to get the partial accessibility tree for.
+        /// </summary>
+        public CefNet.DevTools.Protocol.Runtime.RemoteObjectId? ObjectId { get; set; }
+
+        /// <summary>
+        /// Whether to fetch this nodes ancestors, siblings and children. Defaults to true.
+        /// </summary>
+        public bool? FetchRelatives { get; set; }
+    }
+}

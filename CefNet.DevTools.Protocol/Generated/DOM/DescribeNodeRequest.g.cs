@@ -1,0 +1,36 @@
+//
+// DO NOT MODIFY. THIS IS AUTOMATICALLY GENERATED FILE.
+//
+#nullable enable
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+using System;
+using System.Collections.Generic;
+
+namespace CefNet.DevTools.Protocol.DOM
+{
+    public sealed class DescribeNodeRequest
+    {
+        /// <summary>Identifier of the node.</summary>
+        public CefNet.DevTools.Protocol.DOM.NodeId? NodeId { get; set; }
+
+        /// <summary>Identifier of the backend node.</summary>
+        public CefNet.DevTools.Protocol.DOM.BackendNodeId? BackendNodeId { get; set; }
+
+        /// <summary>
+        /// JavaScript object id of the node wrapper.
+        /// </summary>
+        public CefNet.DevTools.Protocol.Runtime.RemoteObjectId? ObjectId { get; set; }
+
+        /// <summary>
+        /// The maximum depth at which children should be retrieved, defaults to 1. Use -1 for the
+        /// entire subtree or provide an integer larger than 0.
+        /// </summary>
+        public int? Depth { get; set; }
+
+        /// <summary>
+        /// Whether or not iframes and shadow roots should be traversed when returning the subtree
+        /// (default is false).
+        /// </summary>
+        public bool? Pierce { get; set; }
+    }
+}

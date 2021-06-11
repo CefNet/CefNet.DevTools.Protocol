@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <LangVersion>9.0</LangVersion>
+    <Configurations>Debug;Release;Nuget_Release</Configurations>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <CefVersion>0.0</CefVersion>
+    <VersionBuild>$([System.DateTime]::UtcNow.ToString(yy))$([System.DateTime]::UtcNow.DayOfYear.ToString(000))</VersionBuild>
+    <VersionRevision>$([System.DateTime]::UtcNow.ToString(HHmm))</VersionRevision>
+    <VersionPrefix>$(CefVersion).$(VersionBuild).$(VersionRevision)</VersionPrefix>
+    <VersionSuffix Condition="$(Configuration) != 'Nuget_Release'">m-$([System.DateTime]::UtcNow.ToString(mmss))</VersionSuffix>
+    <AssemblyOriginatorKeyFile>../../CefNet/cefnet.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly Condition="Exists($(AssemblyOriginatorKeyFile))">true</SignAssembly>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>The CefNet Authors</Authors>
+    <PackageProjectUrl>https://github.com/cefnet</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/cefnet/cefnet.devtools.protocol</RepositoryUrl>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Description>The common lower-level API for the Chrome DevTools Protocol.</Description>
+    <PackageTags>CefNet, Chrome DevTools Protocol</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Nuget_Release'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
