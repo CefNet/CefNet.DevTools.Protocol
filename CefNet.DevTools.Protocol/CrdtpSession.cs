@@ -59,7 +59,7 @@ namespace CefNet.DevTools
 		{
 			if (_jsonSerializerOptions is null)
 			{
-				var namingPolicy = new LowerCaseNamingPolicy();
+				var namingPolicy = new LowerCamelCaseNamingPolicy();
 				_jsonSerializerOptions = new JsonSerializerOptions
 				{
 					DictionaryKeyPolicy = namingPolicy,
