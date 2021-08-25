@@ -17,7 +17,11 @@ namespace CefNet.DevTools.Protocol.CSS
         /// <summary>Owner frame identifier.</summary>
         public CefNet.DevTools.Protocol.Page.FrameId FrameId { get; set; }
 
-        /// <summary>Stylesheet resource URL.</summary>
+        /// <summary>
+        /// Stylesheet resource URL. Empty if this is a constructed stylesheet created using
+        /// new CSSStyleSheet() (but non-empty if this is a constructed sylesheet imported
+        /// as a CSS module script).
+        /// </summary>
         public string SourceURL { get; set; }
 
         /// <summary>
@@ -61,7 +65,8 @@ namespace CefNet.DevTools.Protocol.CSS
         public bool IsMutable { get; set; }
 
         /// <summary>
-        /// Whether this stylesheet is a constructed stylesheet (created using new CSSStyleSheet()).
+        /// True if this stylesheet is created through new CSSStyleSheet() or imported as a
+        /// CSS module script.
         /// </summary>
         public bool IsConstructed { get; set; }
 

@@ -21,6 +21,6 @@ namespace CefNet.DevTools.Protocol.Audits
         /// A unique id for this issue. May be omitted if no other entity (e.g.
         /// exception, CDP message, etc.) is referencing this issue.
         /// </summary>
-        public string? IssueId { get; set; }
+        public CefNet.DevTools.Protocol.Audits.IssueId? IssueId { get; set; }
     }
 }

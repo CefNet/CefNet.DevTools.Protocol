@@ -26,7 +26,7 @@ namespace CefNet.DevTools.Protocol.Runtime
         public string Name { get; set; }
 
         /// <summary>
-        /// [Experimental] A system-unique execution context identifier. Unlike the id, this is unique accross
+        /// [Experimental] A system-unique execution context identifier. Unlike the id, this is unique across
         /// multiple processes, so can be reliably used to identify specific context while backend
         /// performs a cross-process navigation.
         /// </summary>

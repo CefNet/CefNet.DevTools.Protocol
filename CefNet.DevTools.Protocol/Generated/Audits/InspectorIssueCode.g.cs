@@ -24,5 +24,6 @@ namespace CefNet.DevTools.Protocol.Audits
         AttributionReportingIssue,
         QuirksModeIssue,
         NavigatorUserAgentIssue,
+        WasmCrossOriginModuleSharingIssue,
     }
 }

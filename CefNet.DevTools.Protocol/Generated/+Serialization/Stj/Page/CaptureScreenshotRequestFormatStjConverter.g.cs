@@ -27,6 +27,7 @@ namespace CefNet.DevTools.Protocol.Page
             {
                 CefNet.DevTools.Protocol.Page.CaptureScreenshotRequestFormat.Jpeg => "jpeg",
                 CefNet.DevTools.Protocol.Page.CaptureScreenshotRequestFormat.Png => "png",
+                CefNet.DevTools.Protocol.Page.CaptureScreenshotRequestFormat.Webp => "webp",
                 _ => throw new NotSupportedException("CaptureScreenshotRequestFormat" + "::" + value.ToString()),
             };
             writer.WriteStringValue(serialized);

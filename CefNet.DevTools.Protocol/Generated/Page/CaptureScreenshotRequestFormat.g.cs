@@ -9,5 +9,6 @@ namespace CefNet.DevTools.Protocol.Page
     {
         Jpeg = 1,
         Png,
+        Webp,
     }
 }

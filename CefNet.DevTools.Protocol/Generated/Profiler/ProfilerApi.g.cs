@@ -233,7 +233,7 @@ namespace CefNet.DevTools.Protocol.Profiler
         /// [Experimental] Reports coverage delta since the last poll (either from an event like this, or from
         /// `takePreciseCoverage` for the current isolate. May only be sent if precise code
         /// coverage has been started. This event can be trigged by the embedder to, for example,
-        /// trigger collection of coverage data immediatelly at a certain point in time.
+        /// trigger collection of coverage data immediately at a certain point in time.
         /// </summary>
         public readonly event System.EventHandler<CefNet.DevTools.Protocol.Profiler.PreciseCoverageDeltaUpdateEventArgs> PreciseCoverageDeltaUpdate 
         {

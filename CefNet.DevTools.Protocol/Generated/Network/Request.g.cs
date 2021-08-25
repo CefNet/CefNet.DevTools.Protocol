@@ -59,5 +59,11 @@ namespace CefNet.DevTools.Protocol.Network
         /// passed by the developer (e.g. via "fetch") as understood by the backend.
         /// </summary>
         public CefNet.DevTools.Protocol.Network.TrustTokenParams? TrustTokenParams { get; set; }
+
+        /// <summary>
+        /// [Experimental] True if this resource request is considered to be the 'same site' as the
+        /// request correspondinfg to the main frame.
+        /// </summary>
+        public bool? IsSameSite { get; set; }
     }
 }

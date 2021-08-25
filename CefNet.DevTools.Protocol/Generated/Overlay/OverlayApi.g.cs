@@ -2,6 +2,7 @@
 // DO NOT MODIFY. THIS IS AUTOMATICALLY GENERATED FILE.
 //
 #nullable enable
+using System;
 
 namespace CefNet.DevTools.Protocol.Overlay
 {
@@ -76,8 +77,12 @@ namespace CefNet.DevTools.Protocol.Overlay
         }
 
         /// <summary>
-        /// Highlights owner element of the frame with given id.
+        /// [Deprecated] Highlights owner element of the frame with given id.
+        /// Deprecated: Doesn't work reliablity and cannot be fixed due to process
+        /// separatation (the owner node might be in a different process). Determine
+        /// the owner node in the client and use highlightNode.
         /// </summary>
+        [Obsolete]
         public readonly System.Threading.Tasks.Task HighlightFrameAsync(
             CefNet.DevTools.Protocol.Overlay.HighlightFrameRequest parameters, 
             System.Threading.CancellationToken cancellationToken = default)
@@ -169,6 +174,15 @@ namespace CefNet.DevTools.Protocol.Overlay
             return _session
                 .ExecuteCommandAsync<CefNet.DevTools.Protocol.Overlay.SetShowAdHighlightsRequest>(
                     "Overlay.setShowAdHighlights", parameters, cancellationToken);
+        }
+
+        public readonly System.Threading.Tasks.Task SetShowContainerQueryOverlaysAsync(
+            CefNet.DevTools.Protocol.Overlay.SetShowContainerQueryOverlaysRequest parameters, 
+            System.Threading.CancellationToken cancellationToken = default)
+        {
+            return _session
+                .ExecuteCommandAsync<CefNet.DevTools.Protocol.Overlay.SetShowContainerQueryOverlaysRequest>(
+                    "Overlay.setShowContainerQueryOverlays", parameters, cancellationToken);
         }
 
         /// <summary>

@@ -19,7 +19,7 @@ namespace CefNet.DevTools.Protocol.Profiler
         /// <summary>
         /// Identifier for distinguishing coverage events.
         /// </summary>
-        public string Occassion { get; set; }
+        public string Occasion { get; set; }
 
         /// <summary>Coverage data for the current isolate.</summary>
         public System.Collections.Generic.List<CefNet.DevTools.Protocol.Profiler.ScriptCoverage> Result { get; set; }

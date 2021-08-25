@@ -26,5 +26,8 @@ namespace CefNet.DevTools.Protocol.CSS
         /// Identifier of the stylesheet containing this object (if exists).
         /// </summary>
         public CefNet.DevTools.Protocol.CSS.StyleSheetId? StyleSheetId { get; set; }
+
+        /// <summary>Optional name for the container.</summary>
+        public string? Name { get; set; }
     }
 }

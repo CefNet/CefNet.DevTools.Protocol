@@ -18,5 +18,10 @@ namespace CefNet.DevTools.Protocol.Page
 
         /// <summary>The frame id of the associated frame.</summary>
         public CefNet.DevTools.Protocol.Page.FrameId FrameId { get; set; }
+
+        /// <summary>
+        /// Array of reasons why the page could not be cached. This must not be empty.
+        /// </summary>
+        public System.Collections.Generic.List<CefNet.DevTools.Protocol.Page.BackForwardCacheNotRestoredExplanation> NotRestoredExplanations { get; set; }
     }
 }

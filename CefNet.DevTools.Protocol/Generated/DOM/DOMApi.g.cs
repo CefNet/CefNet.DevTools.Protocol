@@ -127,6 +127,20 @@ namespace CefNet.DevTools.Protocol.DOM
         }
 
         /// <summary>
+        /// [Experimental] Returns the container of the given node based on container query conditions.
+        /// If containerName is given, it will find the nearest container with a matching name;
+        /// otherwise it will find the nearest container regardless of its container name.
+        /// </summary>
+        public readonly System.Threading.Tasks.Task<CefNet.DevTools.Protocol.DOM.GetContainerForNodeResponse> GetContainerForNodeAsync(
+            CefNet.DevTools.Protocol.DOM.GetContainerForNodeRequest parameters, 
+            System.Threading.CancellationToken cancellationToken = default)
+        {
+            return _session
+                .ExecuteCommandAsync<CefNet.DevTools.Protocol.DOM.GetContainerForNodeRequest, CefNet.DevTools.Protocol.DOM.GetContainerForNodeResponse>(
+                    "DOM.getContainerForNode", parameters, cancellationToken);
+        }
+
+        /// <summary>
         /// [Experimental] Returns quads that describe node position on the page. This method
         /// might return multiple quads for inline nodes.
         /// </summary>

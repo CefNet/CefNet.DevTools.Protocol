@@ -17,6 +17,11 @@ namespace CefNet.DevTools.Protocol.DOMSnapshot
         /// <summary>`Node`'s nodeType.</summary>
         public System.Collections.Generic.List<int>? NodeType { get; set; }
 
+        /// <summary>
+        /// Type of the shadow root the `Node` is in. String values are equal to the `ShadowRootType` enum.
+        /// </summary>
+        public CefNet.DevTools.Protocol.DOMSnapshot.RareStringData? ShadowRootType { get; set; }
+
         /// <summary>`Node`'s nodeName.</summary>
         public System.Collections.Generic.List<CefNet.DevTools.Protocol.DOMSnapshot.StringIndex>? NodeName { get; set; }
 

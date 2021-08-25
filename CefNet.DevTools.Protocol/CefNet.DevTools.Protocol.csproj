@@ -7,11 +7,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
-    <CefVersion>0.0</CefVersion>
-    <VersionBuild>$([System.DateTime]::UtcNow.ToString(yy))$([System.DateTime]::UtcNow.DayOfYear.ToString(000))</VersionBuild>
-    <VersionRevision>$([System.DateTime]::UtcNow.ToString(HHmm))</VersionRevision>
-    <VersionPrefix>$(CefVersion).$(VersionBuild).$(VersionRevision)</VersionPrefix>
-    <VersionSuffix Condition="$(Configuration) != 'Nuget_Release'">m-$([System.DateTime]::UtcNow.ToString(mmss))</VersionSuffix>
+    <Version>93.0.4577.42</Version>
     <AssemblyOriginatorKeyFile>../../CefNet/cefnet.snk</AssemblyOriginatorKeyFile>
     <SignAssembly Condition="Exists($(AssemblyOriginatorKeyFile))">true</SignAssembly>
   </PropertyGroup>

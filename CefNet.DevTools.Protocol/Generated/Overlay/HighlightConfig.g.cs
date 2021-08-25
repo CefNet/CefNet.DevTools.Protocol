@@ -102,5 +102,10 @@ namespace CefNet.DevTools.Protocol.Overlay
         /// The contrast algorithm to use for the contrast ratio (default: aa).
         /// </summary>
         public CefNet.DevTools.Protocol.Overlay.ContrastAlgorithm? ContrastAlgorithm { get; set; }
+
+        /// <summary>
+        /// The container query container highlight configuration (default: all transparent).
+        /// </summary>
+        public CefNet.DevTools.Protocol.Overlay.ContainerQueryContainerHighlightConfig? ContainerQueryContainerHighlightConfig { get; set; }
     }
 }

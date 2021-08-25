@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Audits\HeavyAdReasonStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Audits\HeavyAdResolutionStatusStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Audits\InspectorIssueCodeStjConverter.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Audits\IssueIdStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Audits\MixedContentResolutionStatusStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Audits\MixedContentResourceTypeStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Audits\SameSiteCookieExclusionReasonStjConverter.g.cs" />
@@ -126,7 +127,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Overlay\ContrastAlgorithmStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Overlay\InspectModeStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Overlay\LineStylePatternStjConverter.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Page\AdFrameExplanationStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Page\AdFrameTypeStjConverter.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Page\BackForwardCacheNotRestoredReasonStjConverter.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Page\BackForwardCacheNotRestoredReasonTypeStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Page\CaptureScreenshotRequestFormatStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Page\CaptureSnapshotRequestFormatStjConverter.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)+Serialization\Stj\Page\ClientNavigationDispositionStjConverter.g.cs" />
@@ -272,6 +276,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Audits\InspectorIssueCode.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Audits\InspectorIssueDetails.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Audits\IssueAddedEventArgs.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audits\IssueId.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Audits\LowTextContrastIssueDetails.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Audits\MixedContentIssueDetails.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Audits\MixedContentResolutionStatus.g.cs" />
@@ -287,6 +292,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Audits\SourceCodeLocation.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Audits\TrustedWebActivityIssueDetails.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Audits\TwaQualityEnforcementViolationType.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audits\WasmCrossOriginModuleSharingIssueDetails.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BackgroundService\BackgroundServiceApi.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BackgroundService\BackgroundServiceEvent.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BackgroundService\BackgroundServiceEventReceivedEventArgs.g.cs" />
@@ -526,6 +532,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)DOM\GetAttributesResponse.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\GetBoxModelRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\GetBoxModelResponse.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\GetContainerForNodeRequest.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DOM\GetContainerForNodeResponse.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\GetContentQuadsRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\GetContentQuadsResponse.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DOM\GetDocumentRequest.g.cs" />
@@ -962,6 +970,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Network\WebTransportCreatedEventArgs.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\BoxStyle.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\ColorFormat.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Overlay\ContainerQueryContainerHighlightConfig.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Overlay\ContainerQueryHighlightConfig.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\ContrastAlgorithm.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\FlexContainerHighlightConfig.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\FlexItemHighlightConfig.g.cs" />
@@ -993,6 +1003,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\SetInspectModeRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\SetPausedInDebuggerMessageRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\SetShowAdHighlightsRequest.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Overlay\SetShowContainerQueryOverlaysRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\SetShowDebugBordersRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\SetShowFlexOverlaysRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Overlay\SetShowFPSCounterRequest.g.cs" />
@@ -1011,9 +1022,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Page\AddScriptToEvaluateOnLoadResponse.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\AddScriptToEvaluateOnNewDocumentRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\AddScriptToEvaluateOnNewDocumentResponse.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\AdFrameExplanation.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\AdFrameStatus.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\AdFrameType.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\AppManifestError.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\AppManifestParsedProperties.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\BackForwardCacheNotRestoredExplanation.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\BackForwardCacheNotRestoredReason.g.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\BackForwardCacheNotRestoredReasonType.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\BackForwardCacheNotUsedEventArgs.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\CaptureScreenshotRequest.g.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Page\CaptureScreenshotRequestFormat.g.cs" />

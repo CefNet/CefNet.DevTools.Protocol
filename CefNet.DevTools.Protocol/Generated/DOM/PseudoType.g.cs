@@ -18,6 +18,7 @@ namespace CefNet.DevTools.Protocol.DOM
         TargetText,
         SpellingError,
         GrammarError,
+        Highlight,
         FirstLineInherited,
         Scrollbar,
         ScrollbarThumb,

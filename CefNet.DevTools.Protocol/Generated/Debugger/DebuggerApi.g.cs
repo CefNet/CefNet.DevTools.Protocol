@@ -147,8 +147,9 @@ namespace CefNet.DevTools.Protocol.Debugger
         }
 
         /// <summary>
-        /// Restarts particular call frame from the beginning.
+        /// [Deprecated] Restarts particular call frame from the beginning.
         /// </summary>
+        [Obsolete]
         public readonly System.Threading.Tasks.Task<CefNet.DevTools.Protocol.Debugger.RestartFrameResponse> RestartFrameAsync(
             CefNet.DevTools.Protocol.Debugger.RestartFrameRequest parameters, 
             System.Threading.CancellationToken cancellationToken = default)

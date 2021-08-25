@@ -32,6 +32,7 @@ namespace CefNet.DevTools.Protocol.Page
                 "ch-rtt" => CefNet.DevTools.Protocol.Page.PermissionsPolicyFeature.ChRtt,
                 "ch-ua" => CefNet.DevTools.Protocol.Page.PermissionsPolicyFeature.ChUa,
                 "ch-ua-arch" => CefNet.DevTools.Protocol.Page.PermissionsPolicyFeature.ChUaArch,
+                "ch-ua-bitness" => CefNet.DevTools.Protocol.Page.PermissionsPolicyFeature.ChUaBitness,
                 "ch-ua-full-version" => CefNet.DevTools.Protocol.Page.PermissionsPolicyFeature.ChUaFullVersion,
                 "ch-ua-mobile" => CefNet.DevTools.Protocol.Page.PermissionsPolicyFeature.ChUaMobile,
                 "ch-ua-model" => CefNet.DevTools.Protocol.Page.PermissionsPolicyFeature.ChUaModel,

@@ -50,5 +50,12 @@ namespace CefNet.DevTools.Protocol.Runtime
         /// Identifier of the context where exception happened.
         /// </summary>
         public CefNet.DevTools.Protocol.Runtime.ExecutionContextId? ExecutionContextId { get; set; }
+
+        /// <summary>
+        /// [Experimental] Dictionary with entries of meta data that the client associated
+        /// with this exception, such as information about associated network
+        /// requests, etc.
+        /// </summary>
+        public System.Collections.Generic.Dictionary<string, object>? ExceptionMetaData { get; set; }
     }
 }

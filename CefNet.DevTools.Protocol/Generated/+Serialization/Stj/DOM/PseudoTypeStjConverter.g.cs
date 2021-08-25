@@ -25,6 +25,7 @@ namespace CefNet.DevTools.Protocol.DOM
                 "first-line" => CefNet.DevTools.Protocol.DOM.PseudoType.FirstLine,
                 "first-line-inherited" => CefNet.DevTools.Protocol.DOM.PseudoType.FirstLineInherited,
                 "grammar-error" => CefNet.DevTools.Protocol.DOM.PseudoType.GrammarError,
+                "highlight" => CefNet.DevTools.Protocol.DOM.PseudoType.Highlight,
                 "input-list-button" => CefNet.DevTools.Protocol.DOM.PseudoType.InputListButton,
                 "marker" => CefNet.DevTools.Protocol.DOM.PseudoType.Marker,
                 "resizer" => CefNet.DevTools.Protocol.DOM.PseudoType.Resizer,

@@ -55,9 +55,9 @@ namespace CefNet.DevTools.Protocol.Page
         public string? UnreachableUrl { get; set; }
 
         /// <summary>
-        /// [Experimental] Indicates whether this frame was tagged as an ad.
+        /// [Experimental] Indicates whether this frame was tagged as an ad and why.
         /// </summary>
-        public CefNet.DevTools.Protocol.Page.AdFrameType? AdFrameType { get; set; }
+        public CefNet.DevTools.Protocol.Page.AdFrameStatus? AdFrameStatus { get; set; }
 
         /// <summary>
         /// [Experimental] Indicates whether the main document is a secure context and explains why that is the case.

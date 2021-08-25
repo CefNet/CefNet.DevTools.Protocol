@@ -63,5 +63,10 @@ namespace CefNet.DevTools.Protocol.Runtime
         /// specified and objectId is, objectGroup will be inherited from object.
         /// </summary>
         public string? ObjectGroup { get; set; }
+
+        /// <summary>
+        /// [Experimental] Whether to throw an exception if side effect cannot be ruled out during evaluation.
+        /// </summary>
+        public bool? ThrowOnSideEffect { get; set; }
     }
 }

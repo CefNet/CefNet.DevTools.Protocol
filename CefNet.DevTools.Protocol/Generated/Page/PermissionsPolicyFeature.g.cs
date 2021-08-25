@@ -25,6 +25,7 @@ namespace CefNet.DevTools.Protocol.Page
         ChRtt,
         ChUa,
         ChUaArch,
+        ChUaBitness,
         ChUaPlatform,
         ChUaModel,
         ChUaMobile,

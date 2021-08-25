@@ -38,5 +38,7 @@ namespace CefNet.DevTools.Protocol.Audits
         public CefNet.DevTools.Protocol.Audits.QuirksModeIssueDetails? QuirksModeIssueDetails { get; set; }
 
         public CefNet.DevTools.Protocol.Audits.NavigatorUserAgentIssueDetails? NavigatorUserAgentIssueDetails { get; set; }
+
+        public CefNet.DevTools.Protocol.Audits.WasmCrossOriginModuleSharingIssueDetails? WasmCrossOriginModuleSharingIssue { get; set; }
     }
 }

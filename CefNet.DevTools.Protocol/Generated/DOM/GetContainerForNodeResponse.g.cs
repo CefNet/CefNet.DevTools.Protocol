@@ -6,14 +6,13 @@
 using System;
 using System.Collections.Generic;
 
-namespace CefNet.DevTools.Protocol.Debugger
+namespace CefNet.DevTools.Protocol.DOM
 {
-    public sealed class EnableRequest
+    public sealed class GetContainerForNodeResponse
     {
         /// <summary>
-        /// [Experimental] The maximum size in bytes of collected scripts (not referenced by other heap objects)
-        /// the debugger can hold. Puts no limit if parameter is omitted.
+        /// The container node for the given node, or null if not found.
         /// </summary>
-        public double? MaxScriptsCacheSize { get; set; }
+        public CefNet.DevTools.Protocol.DOM.NodeId? NodeId { get; set; }
     }
 }

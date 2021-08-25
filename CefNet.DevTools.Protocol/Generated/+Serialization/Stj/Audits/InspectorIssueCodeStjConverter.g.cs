@@ -30,6 +30,7 @@ namespace CefNet.DevTools.Protocol.Audits
                 "SameSiteCookieIssue" => CefNet.DevTools.Protocol.Audits.InspectorIssueCode.SameSiteCookieIssue,
                 "SharedArrayBufferIssue" => CefNet.DevTools.Protocol.Audits.InspectorIssueCode.SharedArrayBufferIssue,
                 "TrustedWebActivityIssue" => CefNet.DevTools.Protocol.Audits.InspectorIssueCode.TrustedWebActivityIssue,
+                "WasmCrossOriginModuleSharingIssue" => CefNet.DevTools.Protocol.Audits.InspectorIssueCode.WasmCrossOriginModuleSharingIssue,
                 _ => throw new NotSupportedException(value),
             };
             return result;

@@ -17,5 +17,10 @@ namespace CefNet.DevTools.Protocol.HeapProfiler
         public bool? ReportProgress { get; set; }
 
         public bool? TreatGlobalObjectsAsRoots { get; set; }
+
+        /// <summary>
+        /// If true, numerical values are included in the snapshot
+        /// </summary>
+        public bool? CaptureNumericValue { get; set; }
     }
 }

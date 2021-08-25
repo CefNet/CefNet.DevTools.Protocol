@@ -16,8 +16,13 @@ namespace CefNet.DevTools.Protocol.HeapProfiler
         public bool? ReportProgress { get; set; }
 
         /// <summary>
-        /// If true, a raw snapshot without artifical roots will be generated
+        /// If true, a raw snapshot without artificial roots will be generated
         /// </summary>
         public bool? TreatGlobalObjectsAsRoots { get; set; }
+
+        /// <summary>
+        /// If true, numerical values are included in the snapshot
+        /// </summary>
+        public bool? CaptureNumericValue { get; set; }
     }
 }
